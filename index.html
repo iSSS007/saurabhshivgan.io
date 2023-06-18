@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+		<link rel="stylesheet" href="assets/js/sendemail.js">
+		
 		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -195,26 +197,29 @@
 							<section class="panel color4-alt">
 								<div class="intro color4">
 									<h2 class="major">Contact</h2>
-									<p>For all enquiries,please contact me on using one of the following :</p>
+									<p>For all enquiries,please contact me on using one of the following or you can send message using form :</p>
 									<strong>- Email : <a href="mailto:saurabhshivgan@yahoo.com">saurabhshivgan@yahoo.com</a></strong>
 									<strong> - Contact No. : <a href="Tel:+91 9518503514">+91 9518503514</a></strong>
 									<p></p>
 								</div>
 								<div class="inner columns divided">
 									<div class="span-3-25">
-										<form method="post" action="#">
+										<form id="contactform" method="post" onsubmit="sendEmail();reset();return false;">
 											<div class="fields">
 												<div class="field half">
 													<label for="name">Name</label>
-													<input type="text" name="name" id="name" />
+													<input type="text" required name="name" id="name" />
+													<span class="error" id="nameError"></span>
 												</div>
 												<div class="field half">
 													<label for="email">Email</label>
-													<input type="email" name="email" id="email" />
+													<input type="email" name="email" id="email" required/>
+													<span class="error" id="emailError"></span>
 												</div>
 												<div class="field">
 													<label for="message">Message</label>
-													<textarea name="message" id="message" rows="4"></textarea>
+													<textarea name="message" id="message" rows="4" required></textarea>
+													<span class="error" id="messageError"></span>
 												</div>
 											</div>
 											<ul class="actions">
@@ -240,7 +245,8 @@
 							<div class="copyright" style="color: green;"> <i class="fas fa-copyright"></i> 2023 Saurabh Shivgan </div>
 
 					</div>
-
+									
+					
 			</div>
 
 		<!-- Scripts -->
@@ -248,6 +254,8 @@
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://smtpjs.com/v3/smtp.js"></script>
+			<script src="assets/js/sendemail.js"></script>
 
 	</body>
 </html>
