@@ -1,264 +1,667 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Saurabh Shivgan PortFolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
-		<link rel="stylesheet" href="assets/js/sendemail.js">
-		
-		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saurabh Shivgan — Software Developer</title>
+    <meta name="description"
+          content="Software Developer specializing in .NET MAUI, Xamarin, C# and Full-Stack Development. Based in Pune, India." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+          rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
 
-				<!-- Wrapper -->
-					<div id="wrapper">
+</head>
 
-						<!-- Panel (Banner) -->
-							<section class="panel banner right">
-								<div class="content color0 span-3-75">
-									<h1 class="major">Hello, my name<br />
-									is Saurabh Shivgan </h1>
-									<p>I am proficient in <strong>Front end development</strong>  and
-										<strong>Back end web development</strong> also in coding with HTML, CSS, and JS for the client-side and maintaining databases and infrastructure server-side.</p>
-									<ul class="actions">
-										<li><a href="#first" class="button primary color1 circle icon solid fa-angle-right">Next</a></li>
-									</ul>
-								</div>
-								<div class="image filtered span-1-75" data-position="25% 25%">
-									<img src="images/pic01.jpeg" alt="" />
-								</div>
-							</section>
+<body>
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <!-- ============================================================
+         LOADER
+    ============================================================ -->
+    <div id="loader">
+        <div class="loader-name">SS</div>
+        <div class="loader-bar-wrap">
+            <div class="loader-bar"></div>
+        </div>
+    </div>
 
-						<!-- Panel (Spotlight) -->
-							<section class="panel spotlight medium right" id="first">
-								<div class="content span-7">
-									<h2 class="major">About Me</h2>
-									<p>
-										Aspiring computer programmer with a <br>
-										<strong>Post Graduation Diploma in Advance Computing</strong>
-										<br> and proven problem-solving and troubleshooting skills.<br>As a <strong>quick learner</strong> I can inherit new Skills quickly.
-										<br>I completed my Graduation from Pune University.<br>I want to be <strong>Best Program Engineer</strong>
-										<br>I like to play Badminton,Online Video Games(DOTA 2 , CS GO , VALORANT)  
-										and also like to watch Animes (Naruto,One Piece) ,Web Series
-										(Game of Throne,Family Man,Vampire Diaries).
-										<br>
-										<strong>You can download my resume <a href="https://drive.google.com/file/d/1j1nNkUKgswt1dfzP_XF0cN1_mh0JdDLb/view?usp=sharing" target="_blank" alt="Resume">here.</a></strong>
-										
-									</p>
-								</div>
-								<div class="image filtered tinted" data-position="top left">
-									<img src="images/pic02.jpg" alt="" />
-								</div>
-							</section>
+    <!-- ============================================================
+         BACKGROUND CANVAS
+    ============================================================ -->
+    <canvas id="bg-canvas"></canvas>
 
-						<!-- Panel -->
-							<section class="panel color1">
-								<div class="intro joined" style="width: 450px;">
-									<h2 class="major">My Skills</h2>
-									
-									
-									<h4><i class=" fas fa-cog"> </i> Programming Language </h4>
-										<p>
-									 <img src="images/Csharp.svg" alt="csharp" width="40" height="40"/> 
-									<img src="images/dotnet.svg" alt="dotnet" width="40" height="40"/> 
-									<img src="images/expressjs.svg" alt="express" width="40" height="40"/> </a>
-										 <img src="images/java.svg" alt="java" width="40" height="40"/> 
-										
-										<img src="images/javascript.svg" alt="javascript" width="40" height="40"/> 
-										 <img src="images/linux.svg" alt="linux" width="40" height="40"/>
-										 <img src="images/xamarin-original.svg" alt="Xamarin" width="40" height="40"/>
-									</p>
-									<h4> <i class=" fas fa-cog"> </i>  Front End Development</h4>
-									<p>
-										<img src="images/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
-										<img style= "background-color:beige;" src="images/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> 
-										<img src="images/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> 
-										<img src="images/photoshop-line.svg" alt="photoshop" width="40" height="40"/> 
-										<img src="images/react-original-wordmark.svg" alt="react" width="40" height="40"/> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> 
-										<img src="images/redux-original.svg" alt="redux" width="40" height="40"/> 
-									</p>
-									<h4><i class=" fas fa-cog"> </i>  Back End Development & Database</h4>
-									<p>
-										 <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/>
-										 <img src="images/nginx-original.svg" alt="nginx" width="40" height="40"/>  <img src="images/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> 
-										 <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring" width="40" height="40"/> 
-										<img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> 
-										<img src="images/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/>  <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> <img src="images/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> 
-									</p>
-									
-									<h4><i class=" fas fa-cog"> </i>  Deployment & Other tools</h4>
-									<p>
-									<img src="images/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> <img src="images/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> <img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="jenkins" width="40" height="40"/> <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="40" height="40"/><img src="images/cypress.svg" alt="cypress" width="40" height="40"/> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>  <img src="images/selenium-original.svg" alt="selenium" width="40" height="40"/>
-									
-								</p>
-								</div>
-								<!-- <div class="inner">
-									<ul class="grid-icons three connected">
-										<li>
-											<span class="icon solid fa-database">
-											</span>
-											</li>
-										<li><span class=" fa-4x fab fa-html5 icon ">
-											</span></li>
-										<li><span class="icon solid fa-scissors"><span class="label">Dolor</span></span></li>
-										<li><span class="icon solid fa-paper-plane"><span class="label">Sit</span></span></li>
-										<li><span class="icon solid fa-chart-bar"><span class="label">Amet</span></span></li>
-										<li><span class="icon solid fa-code"><span class="label">Nullam</span></span></li>
-									</ul>
-								</div> -->
-							</section>
+    <!-- ============================================================
+         NAV
+    ============================================================ -->
+    <nav>
+        <a href="#hero" class="nav-logo">S·S</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <a href="https://drive.google.com/file/d/1ukVAHV6I6zYOPHAeOu8QTtRJ0zOlwtw_/view?usp=sharing" target="_blank"
+                   class="nav-cta">Resume ↗</a>
+            </li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
 
-						<!-- Panel (Spotlight) -->
-							<section class="panel spotlight large left">
-								<div class="content span-5">
-									<h2 class="major">My Experience</h2>
-									
-									<p class="tl-duration"><i class="fas fa-clock"></i>      June-2023 - Present</p>
-										 
-										<h4><i class="fas fa-briefcase"></i> Software Developer  - DIBS Technology Private Ltd</h4>   
-										<strong> Working as a Software Developer</strong>
-									</p>					
-									<p class="tl-duration"><i class="fas fa-clock"></i>      Jan-2019 - Sep-2022</p>
-										 
-									<h4><i class="fas fa-briefcase"> </i> Billing Engineer - Kalyan Toll Infrastructure Ltd</h4>   
-									<strong> Working as a Quantity Surveyor & Billing Engineer</strong>
-								</p>					
-								<p class="tl-duration"><i class="fas fa-clock"></i>      June-2017 - Dec-2018</p>
-										 
-								<h4><i class="fas fa-briefcase"></i> Plant Engineer  - Rudrani Infrastructure Ltd</h4>   
-								<strong> Working as a RMC Plant Engineer and Maintainance Engineer</strong>
-								</p>					
-									
-									
-								</div>
-								<div class="image filtered tinted" data-position="top right">
-									<img src="images/pic03.jpg" alt="" />
-								</div>
-							</section>
-							<!-- Panel (Spotlight) -->
-							<section class="panel spotlight medium right" id="first">
-								<div class="content span-7" >
-									<h2 class="major">My Education</h2>
-									<p class="tl-duration"><i class="fas fa-clock"></i>      Sep-2022 - June -2023</p>
-										 
-										<h4><i class="fas fa-school"></i> Post Graduation - Diploma in Advance Computing</h4>   
-										<strong> Baics of front end development and back end development From Sunbeam Institute Pune</strong>
-										
-										
-									</p>					
-									<p class="tl-duration"><i class="fas fa-clock"></i>      Aug-2012 - June-2016 </p>
-										 
-									<h4><i class="fas fa-school"> </i> Bachelor of Engineering - Mechanical Stream</h4>   
-									<strong> From Pravara Rural Engineering College Loni (Pune University) </strong>
-									
-								</p>					
-								<p class="tl-duration"><i class="fas fa-briefcase"></i>      June-2010 - June-2012</p>
-										 
-								<h4><i class="fas fa-clock"></i> Higher Secondary and Secondary Education - Science</h4>   
-								<strong> From Aurangabad Board</strong>
-								</p>	
-											
-								</div>
-								<div class="image filtered tinted" data-position="top left">
-									<img src="images/pic021.jpg" alt="" />
-								</div>
-							</section>
-						<!-- Panel -->
-							<section class="panel">
-								<div class="intro color2">
-									<h2 class="major">My Project </h2>
-									<p><strong><i class="fas fa-car-side"> </i> Car Rental Management System</strong></p>
-									This technology mainly helps the owner to maintain the car business and the user to book and inquiry about new cars.It is a good framework structured website for managing car rental business.The car rental website gives an easy system of posting and booking car.React JS is used as the frontend followed by Spring Boot and MYSQL as backend for making this website.
-								</div>
-								<div class="gallery">
-									<div class="group span-3">
-										<a href="images/gallery/fulls/01.jpg" class="image filtered span-3" data-position="bottom"><img src="images/gallery/thumbs/01.jpg" alt="" /></a>
-										<a href="images/gallery/fulls/02.jpg" class="image filtered span-1-5" data-position="center"><img src="images/gallery/thumbs/02.jpg" alt="" /></a>
-										<a href="images/gallery/fulls/03.jpg" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/thumbs/03.jpg" alt="" /></a>
-									</div>
-									<a href="images/gallery/fulls/04.jpg" class="image filtered span-2-5" data-position="top"><img src="images/gallery/thumbs/04.jpg" alt="" /></a>
-									<div class="group span-4-5">
-										<a href="images/gallery/fulls/05.jpg" class="image filtered span-3" data-position="top"><img src="images/gallery/thumbs/05.jpg" alt="" /></a>
-										<a href="images/gallery/fulls/06.jpg" class="image filtered span-1-5" data-position="center"><img src="images/gallery/thumbs/06.jpg" alt="" /></a>
-										<a href="images/gallery/fulls/07.jpg" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/thumbs/07.jpg" alt="" /></a>
-										<a href="images/gallery/fulls/08.jpg" class="image filtered span-3" data-position="top"><img src="images/gallery/thumbs/08.jpg" alt="" /></a>
-									</div>
-									<a href="images/gallery/fulls/09.jpg" class="image filtered span-2-5" data-position="right"><img src="images/gallery/thumbs/09.jpg" alt="" /></a>
-								</div>
-							</section>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" onclick="closeMobile()">About</a>
+        <a href="#skills" onclick="closeMobile()">Skills</a>
+        <a href="#experience" onclick="closeMobile()">Experience</a>
+        <a href="#projects" onclick="closeMobile()">Projects</a>
+        <a href="#education" onclick="closeMobile()">Education</a>
+        <a href="#contact" onclick="closeMobile()">Contact</a>
+        <a href="https://drive.google.com/file/d/1j1nNkUKgswt1dfzP_XF0cN1_mh0JdDLb/view?usp=sharing" target="_blank">
+            Resume
+            ↗
+        </a>
+    </div>
 
-						<!-- Panel -->
-							<section class="panel color4-alt">
-								<div class="intro color4">
-									<h2 class="major">Contact</h2>
-									<p>For all enquiries,please contact me on using one of the following or you can send message using form :</p>
-									<strong>- Email : <a href="mailto:saurabhshivgan@yahoo.com">saurabhshivgan@yahoo.com</a></strong>
-									<strong> - Contact No. : <a href="Tel:+91 9518503514">+91 9518503514</a></strong>
-									<p></p>
-								</div>
-								<div class="inner columns divided">
-									<div class="span-3-25">
-										<form id="contactform" method="post" onsubmit="sendEmail();reset();return false;">
-											<div class="fields">
-												<div class="field half">
-													<label for="name">Name</label>
-													<input type="text" required name="name" id="name" />
-													<span class="error" id="nameError"></span>
-												</div>
-												<div class="field half">
-													<label for="email">Email</label>
-													<input type="email" name="email" id="email" required/>
-													<span class="error" id="emailError"></span>
-												</div>
-												<div class="field">
-													<label for="message">Message</label>
-													<textarea name="message" id="message" rows="4" required></textarea>
-													<span class="error" id="messageError"></span>
-												</div>
-											</div>
-											<ul class="actions">
-												<li><input type="submit" value="Send Message" class="button primary" /></li>
-											</ul>
-										</form>
-									</div>
-									<div class="span-1-5">
-										<ul class="contact-icons color1">
-											<li class="icon brands fa-linkedin"><a href="https://linkedin.com/in/saurabhshivgan" target="_blank">@saurabhshivgan</a></li>
-											<li class="icon brands fa-twitter"><a href="https://twitter.com/shivgansaurabh" target="_blank">@shivgansaurabh</a></li>
-											<li class="icon brands fa-youtube"><a href="https://www.youtube.com/channel/UCARerohEQDIrjAuj32HAdVg" target="_blank">@DarksideGaming9074</a></li>
-											<li class="icon brands fa-instagram"><a href="https://instagram.com/gta.vegus" target="_blank">@gta.vegus</a></li>
-											<li class="icon brands fa-github"><a href="https://github.com/iSSS007" target="_blank">@iSSS007</a></li>
-										</ul>
-									</div>
-								</div>
-							</section>
+    <!-- ============================================================
+         MAIN
+    ============================================================ -->
+    <main>
 
-						
+        <!-- ── HERO ────────────────────────────────────────────────── -->
+        <section id="hero">
+            <div class="hero-content">
 
-						<!-- Copyright -->
-							<div class="copyright" style="color: green;"> <i class="fas fa-copyright"></i> 2025 Saurabh Shivgan </div>
+                <div class="hero-badge">
+                    <span class="dot"></span>
+                    Open to opportunities · Pune, India
+                </div>
 
-					</div>
-									
-					
-			</div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Saurabh</span><br />Shivgan
+                </h1>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="https://smtpjs.com/v3/smtp.js"></script>
-			<script src="assets/js/sendemail.js"></script>
+                <p class="hero-subtitle">Software Developer · .NET MAUI · Xamarin · C# · Full-Stack</p>
 
-	</body>
+                <p class="hero-tagline">
+                    Building <span>cross-platform mobile apps</span> and scalable back-end systems — from idea to deployed
+                    product.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">
+                        <i class="fas fa-layer-group"></i> View Projects
+                    </a>
+
+                    <a href="https://linkedin.com/in/saurabhshivgan" target="_blank" class="btn-linkedin">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="#contact" class="btn-ghost">
+                        <i class="fas fa-paper-plane"></i> Get in Touch
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-num">3+</div>
+                        <div class="stat-label">Years at DIBS</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">3+</div>
+                        <div class="stat-label">Years Industry</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">10+</div>
+                        <div class="stat-label">Tech Stacks</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-avatar-ring">
+                    <img src="images/pic01.jpeg" alt="Saurabh Shivgan" class="hero-avatar"
+                         onerror="this.src='https://ui-avatars.com/api/?name=Saurabh+Shivgan&background=3b82f6&color=fff&size=400&bold=true'" />
+                </div>
+                <div class="hero-float-card hfc-1 glass">
+                    <i class="fas fa-mobile-alt"></i> .NET MAUI Expert
+                </div>
+                <div class="hero-float-card hfc-2 glass">
+                    <i class="fas fa-code"></i> C# · Full-Stack
+                </div>
+                <div class="hero-float-card hfc-3 glass">
+                    <i class="fas fa-map-marker-alt"></i> Pune, India
+                </div>
+            </div>
+
+            <div class="scroll-hint">
+                <div class="scroll-mouse"></div>
+                Scroll
+            </div>
+        </section>
+
+        <!-- ── ABOUT ────────────────────────────────────────────────── -->
+        <section id="about">
+            <div class="about-image-wrap reveal">
+                <img src="images/pic0213.jpg" alt="Saurabh" class="about-img"
+                     onerror="this.src='https://ui-avatars.com/api/?name=Saurabh+Shivgan&background=8b5cf6&color=fff&size=600&bold=true'" />
+                <div class="glass about-accent-box">
+                    <div class="val">CDAC</div>
+                    <div class="lbl">PG Diploma · Advanced Computing</div>
+                </div>
+            </div>
+
+            <div class="about-text reveal reveal-delay-1">
+                <div class="section-tag">About Me</div>
+                <h2 class="section-title">Passionate builder,<br /><span class="gradient-text">lifelong learner</span></h2>
+                <p>
+                    I'm a software developer at <strong>DIBS Technologies</strong>, specializing in cross-platform mobile
+                    development with <strong>.NET MAUI</strong> and <strong>Xamarin</strong>. I design, develop, and maintain
+                    scalable software solutions using C#, ASP.NET, and modern mobile frameworks.
+                </p>
+                <p>
+                    My journey into software started after a career pivot — I hold a BE in Mechanical Engineering and a Post
+                    Graduate Diploma in Advanced Computing from <strong>Sunbeam Institute (CDAC), Pune</strong>. That engineering
+                    mindset shapes how I approach problems: methodically, with a focus on systems thinking.
+                </p>
+                <p>
+                    I'm proficient in building responsive cross-platform mobile apps, integrating RESTful APIs, and ensuring code
+                    quality through thorough testing and reviews, with database operations via Entity Framework.
+                </p>
+
+                <div class="interests">
+                    <span class="tag"><i class="fas fa-gamepad"></i> DOTA 2 · VALORANT</span>
+                    <span class="tag"><i class="fas fa-mountain"></i> Hiking</span>
+                    <span class="tag"><i class="fas fa-shuttlecock" style="font-size:0.7rem"></i> Badminton</span>
+                    <span class="tag"><i class="fas fa-dragon"></i> Anime</span>
+                    <span class="tag"><i class="fas fa-tv"></i> One Piece · Naruto</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── SKILLS ───────────────────────────────────────────────── -->
+        <section id="skills">
+            <div style="text-align:center" class="reveal">
+                <div class="section-tag">Technical Expertise</div>
+                <h2 class="section-title">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+                <p style="color:var(--text-secondary);max-width:560px;margin:0 auto">
+                    A curated toolkit built through hands-on
+                    project delivery — from mobile apps to back-end APIs to cloud deployments.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="glass skill-category reveal reveal-delay-1">
+                    <div class="skill-cat-icon icon-violet"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="skill-cat-title">Mobile Development</div>
+                    <div class="skill-chips">
+                        <div class="skill-chip">
+                            <img src="https://isss007.github.io/saurabhshivgan.io/images/dotnet.svg"
+                                 onerror="this.style.display='none'" />.NET MAUI
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://isss007.github.io/saurabhshivgan.io/images/xamarin-original.svg"
+                                 onerror="this.style.display='none'" />Xamarin
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://reactnative.dev/img/header_logo.svg"
+                                 onerror="this.style.display='none'" />React Native
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg"
+                                 onerror="this.style.display='none'" />Flutter
+                        </div>
+                        <div class="skill-chip">XAML</div>
+                    </div>
+                </div>
+
+                <div class="glass skill-category reveal reveal-delay-2">
+                    <div class="skill-cat-icon icon-blue"><i class="fas fa-code"></i></div>
+                    <div class="skill-cat-title">Languages &amp; Frameworks</div>
+                    <div class="skill-chips">
+                        <div class="skill-chip">
+                            <img src="https://isss007.github.io/saurabhshivgan.io/images/Csharp.svg"
+                                 onerror="this.style.display='none'" />C#
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://isss007.github.io/saurabhshivgan.io/images/javascript.svg"
+                                 onerror="this.style.display='none'" />JavaScript
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://isss007.github.io/saurabhshivgan.io/images/java.svg"
+                                 onerror="this.style.display='none'" />Java
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://isss007.github.io/saurabhshivgan.io/images/react-original-wordmark.svg"
+                                 onerror="this.style.display='none'" />React
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://isss007.github.io/saurabhshivgan.io/images/html5-original-wordmark.svg"
+                                 onerror="this.style.display='none'" />HTML5
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://isss007.github.io/saurabhshivgan.io/images/css3-original-wordmark.svg"
+                                 onerror="this.style.display='none'" />CSS3
+                        </div>
+                        <div class="skill-chip">ASP.NET</div>
+                    </div>
+                </div>
+
+                <div class="glass skill-category reveal reveal-delay-1">
+                    <div class="skill-cat-icon icon-cyan"><i class="fas fa-database"></i></div>
+                    <div class="skill-cat-title">Back-End &amp; Database</div>
+                    <div class="skill-chips">
+                        <div class="skill-chip">
+                            <img src="https://isss007.github.io/saurabhshivgan.io/images/nodejs-original-wordmark.svg"
+                                 onerror="this.style.display='none'" />Node.js
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://isss007.github.io/saurabhshivgan.io/images/expressjs.svg"
+                                 onerror="this.style.display='none'" />Express
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg"
+                                 onerror="this.style.display='none'" />Spring Boot
+                        </div>
+                        <div class="skill-chip">Entity Framework</div>
+                        <div class="skill-chip">
+                            <img src="https://isss007.github.io/saurabhshivgan.io/images/mysql-original-wordmark.svg"
+                                 onerror="this.style.display='none'" />MySQL
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://isss007.github.io/saurabhshivgan.io/images/mongodb-original-wordmark.svg"
+                                 onerror="this.style.display='none'" />MongoDB
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg"
+                                 onerror="this.style.display='none'" />MSSQL
+                        </div>
+                        <div class="skill-chip">RESTful APIs</div>
+                    </div>
+                </div>
+
+                <div class="glass skill-category reveal reveal-delay-2">
+                    <div class="skill-cat-icon icon-pink"><i class="fas fa-cloud-upload-alt"></i></div>
+                    <div class="skill-cat-title">Cloud &amp; DevOps</div>
+                    <div class="skill-chips">
+                        <div class="skill-chip">
+                            <img src="https://isss007.github.io/saurabhshivgan.io/images/amazonwebservices-original-wordmark.svg"
+                                 onerror="this.style.display='none'" />AWS
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg"
+                                 onerror="this.style.display='none'" />Azure
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://isss007.github.io/saurabhshivgan.io/images/docker-original-wordmark.svg"
+                                 onerror="this.style.display='none'" />Docker
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+                                 onerror="this.style.display='none'" />Git
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg"
+                                 onerror="this.style.display='none'" />Jenkins
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg"
+                                 onerror="this.style.display='none'" />Kubernetes
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://isss007.github.io/saurabhshivgan.io/images/selenium-original.svg"
+                                 onerror="this.style.display='none'" />Selenium
+                        </div>
+                        <div class="skill-chip">CI/CD</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ── EXPERIENCE ───────────────────────────────────────────── -->
+        <section id="experience">
+            <div class="reveal">
+                <div class="section-tag">Career Journey</div>
+                <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+                    <div class="tl-dot glass icon-violet"><i class="fas fa-laptop-code"></i></div>
+                    <div class="glass tl-content">
+                        <div class="tl-header">
+                            <div>
+                                <div class="tl-role">Software Developer</div>
+                                <div class="tl-company">DIBS Technologies (Formerly Digital Info Bytes)</div>
+                            </div>
+                            <div class="tl-period">June 2023 – Present</div>
+                        </div>
+                        <p class="tl-desc">
+                            Designing, developing, and maintaining scalable software solutions using C#, ASP.NET, and Xamarin/.NET
+                            MAUI. Building responsive cross-platform mobile applications, integrating RESTful APIs, and conducting
+                            thorough testing and code reviews. Proficient in database operations with Entity Framework and dedicated
+                            to continuous learning.
+                        </p>
+                        <div class="interests" style="margin-top:16px">
+                            <span class="tag">.NET MAUI</span>
+                            <span class="tag">Xamarin</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">ASP.NET</span>
+                            <span class="tag">RESTful APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal reveal-delay-1">
+                    <div class="tl-dot glass icon-blue"><i class="fas fa-hard-hat"></i></div>
+                    <div class="glass tl-content">
+                        <div class="tl-header">
+                            <div>
+                                <div class="tl-role">Quantity Surveyor &amp; Billing Engineer</div>
+                                <div class="tl-company">Kalyan Toll Infrastructure Limited</div>
+                            </div>
+                            <div class="tl-period">Jan 2019 – Jul 2022</div>
+                        </div>
+                        <p class="tl-desc">
+                            Prepared detailed payment bills ensuring accuracy and compliance with project specifications. Conducted
+                            thorough quantity estimation for construction activities, maintained comprehensive daily/weekly progress
+                            reports, and collaborated cross-functionally to enhance workflow efficiency.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal reveal-delay-2">
+                    <div class="tl-dot glass icon-cyan"><i class="fas fa-industry"></i></div>
+                    <div class="glass tl-content">
+                        <div class="tl-header">
+                            <div>
+                                <div class="tl-role">Plant Engineer</div>
+                                <div class="tl-company">Rudranee Infrastructure Limited</div>
+                            </div>
+                            <div class="tl-period">Jun 2017 – Dec 2018</div>
+                        </div>
+                        <p class="tl-desc">
+                            Managed RMC plant operations and maintenance in Nagpur. Oversaw equipment performance, maintenance
+                            schedules, and ensured production targets were met consistently.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ── PROJECTS ─────────────────────────────────────────────── -->
+        <section id="projects">
+            <div style="text-align:center" class="reveal">
+                <div class="section-tag">Selected Work</div>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p style="color:var(--text-secondary);max-width:560px;margin:0 auto">
+                    Real-world solutions built with modern tech
+                    stacks, focused on performance and user experience.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+
+                <div class="glass project-card reveal">
+                    <div class="project-banner banner-1">
+                        <div class="slider">
+                            <img src="images/gallery/thumbs/01.jpg" class="slide active">
+                            <img src="images/gallery/thumbs/02.jpg" class="slide">
+                            <img src="images/gallery/thumbs/03.jpg" class="slide">
+                            <img src="images/gallery/thumbs/04.jpg" class="slide">
+                            <img src="images/gallery/thumbs/05.jpg" class="slide">
+                            <img src="images/gallery/thumbs/06.jpg" class="slide">
+                            <img src="images/gallery/thumbs/07.jpg" class="slide">
+                            <img src="images/gallery/thumbs/08.jpg" class="slide">
+                            <img src="images/gallery/thumbs/09.jpg" class="slide">
+                        </div>
+                        <div class="project-banner-overlay"></div>
+                        <div class="project-banner-badge">Full Stack</div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-name">Car Rental Management System</div>
+                        <p class="project-desc">
+                            A robust platform for car rental businesses — owners manage fleet &amp; bookings,
+                            users browse and reserve vehicles. Built with a clean MVC architecture for scalability.
+                        </p>
+                        <div class="project-tags">
+                            <span class="p-tag">React JS</span>
+                            <span class="p-tag">Spring Boot</span>
+                            <span class="p-tag">MySQL</span>
+                            <span class="p-tag">REST API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/iSSS007" target="_blank" class="p-link github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass project-card reveal reveal-delay-1">
+                    <div class="project-banner banner-2">
+                        <div class="slider">
+                            <img src="images/gallery/mobile/1.png" class="slide active">
+                            <img src="images/gallery/mobile/2.png" class="slide">
+                            <img src="images/gallery/mobile/3.png" class="slide">
+                            <img src="images/gallery/mobile/4.png" class="slide">
+                            <img src="images/gallery/mobile/5.png" class="slide">
+                            <img src="images/gallery/mobile/6.png" class="slide">
+                            <img src="images/gallery/mobile/7.png" class="slide">
+                            <img src="images/gallery/mobile/8.png" class="slide">
+                            <img src="images/gallery/mobile/9.png" class="slide">
+                            <img src="images/gallery/mobile/10.png" class="slide">
+                            <img src="images/gallery/mobile/11.png" class="slide">
+                            <img src="images/gallery/mobile/12.png" class="slide">
+                            <img src="images/gallery/mobile/13.png" class="slide">
+                        </div>
+                        <div class="project-banner-overlay"></div>
+                        <div class="project-banner-badge">.NET MAUI</div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-name">Cross-Platform Mobile App</div>
+                        <p class="project-desc">
+                            Cross-platform mobile application built at DIBS Technologies using .NET MAUI and C#.
+                            Features seamless API integration, offline support, and optimized UI across iOS and Android.
+                        </p>
+                        <div class="project-tags">
+                            <span class="p-tag">.NET MAUI</span>
+                            <span class="p-tag">C#</span>
+                            <span class="p-tag">XAML</span>
+                            <span class="p-tag">REST API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/iSSS007" target="_blank" class="p-link github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass project-card reveal reveal-delay-2">
+                    <div class="project-banner banner-3">
+                        <div class="project-banner-icon">🌐</div>
+                        <div class="project-banner-overlay"></div>
+                        <div class="project-banner-badge">Full Stack</div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-name">ASP.NET Web Platform</div>
+                        <p class="project-desc">
+                            Enterprise-grade web application with ASP.NET back-end, Entity Framework ORM for
+                            database operations, and a responsive front-end. Includes authentication, role management, and reporting.
+                        </p>
+                        <div class="project-tags">
+                            <span class="p-tag">ASP.NET</span>
+                            <span class="p-tag">Entity Framework</span>
+                            <span class="p-tag">MSSQL</span>
+                            <span class="p-tag">HTML/CSS/JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/iSSS007" target="_blank" class="p-link github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass project-card reveal">
+                    <div class="project-banner banner-4">
+                        <div class="project-banner-icon">📊</div>
+                        <div class="project-banner-overlay"></div>
+                        <div class="project-banner-badge">React + Node</div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-name">Node.js REST API Backend</div>
+                        <p class="project-desc">
+                            Scalable REST API backend built with Node.js and Express, featuring JWT
+                            authentication, MongoDB data layer, and comprehensive Postman-tested endpoints.
+                        </p>
+                        <div class="project-tags">
+                            <span class="p-tag">Node.js</span>
+                            <span class="p-tag">Express</span>
+                            <span class="p-tag">MongoDB</span>
+                            <span class="p-tag">JWT</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/iSSS007" target="_blank" class="p-link github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="text-align:center;margin-top:40px" class="reveal">
+                <a href="https://github.com/iSSS007" target="_blank" class="btn-ghost">
+                    <i class="fab fa-github"></i> View All on GitHub
+                </a>
+            </div>
+        </section>
+
+        <!-- ── EDUCATION ────────────────────────────────────────────── -->
+        <section id="education">
+            <div class="reveal">
+                <div class="section-tag">Academic Background</div>
+                <h2 class="section-title">Education &amp; <span class="gradient-text">Learning</span></h2>
+            </div>
+
+            <div class="edu-grid">
+
+                <div class="glass edu-card reveal">
+                    <div class="edu-year"><i class="fas fa-graduation-cap"></i> Sep 2022 – Mar 2023</div>
+                    <div class="edu-degree">PG Diploma in Advanced Computing</div>
+                    <div class="edu-school">Sunbeam Institute of Information Technology (CDAC), Pune</div>
+                </div>
+
+                <div class="glass edu-card reveal reveal-delay-1">
+                    <div class="edu-year"><i class="fas fa-university"></i> Aug 2012 – Jun 2016</div>
+                    <div class="edu-degree">Bachelor of Engineering — Mechanical</div>
+                    <div class="edu-school">Pravara Rural Engineering College, Loni · Pune University</div>
+                </div>
+
+                <div class="glass edu-card reveal reveal-delay-2">
+                    <div class="edu-year"><i class="fas fa-school"></i> Jun 2010 – Jun 2012</div>
+                    <div class="edu-degree">Higher Secondary — Science (PCM)</div>
+                    <div class="edu-school">Yogeshwari Mahavidyalaya, Ambajogai · Aurangabad Board</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ── CONTACT ──────────────────────────────────────────────── -->
+        <section id="contact">
+            <div class="reveal">
+                <div class="section-tag">Get In Touch</div>
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="glass contact-card reveal">
+                    <p class="contact-intro">
+                        I'm always open to discussing new opportunities, interesting projects, or simply having a chat about
+                        technology. Reach out — I'll get back to you promptly.
+                    </p>
+
+                    <div class="contact-links">
+                        <a href="mailto:shivgansaurabh79@gmail.com" class="contact-link email">
+                            <i class="fas fa-envelope"></i> shivgansaurabh79@gmail.com
+                        </a>
+                        <a href="tel:+919518503514" class="contact-link">
+                            <i class="fas fa-phone"></i> +91 9518503514
+                        </a>
+                        <a href="https://linkedin.com/in/saurabhshivgan" target="_blank" class="contact-link linkedin">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/iSSS007" target="_blank" class="contact-link github">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://twitter.com/shivgansaurabh" target="_blank" class="contact-link twitter">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                    </div>
+
+                    <div class="contact-divider">or send a message directly</div>
+
+                    <div class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-input" placeholder="Your name" id="cf-name" />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-input" placeholder="your@email.com" id="cf-email" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-textarea" placeholder="Tell me about your project or opportunity…" id="cf-msg"
+                                      maxlength="300"></textarea>
+                            <small id="charCount" style="color:var(--text-muted)">0 / 300</small>
+                        </div>
+                        <button class="btn-primary" onclick="handleFormSubmit()" style="width:100%;justify-content:center">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================================
+         FOOTER
+    ============================================================ -->
+    <footer>
+        <div class="footer-copy">
+            © <span id="yearRange"></span> <span>Saurabh Shivgan</span> · Crafted with passion in Pune 🇮🇳
+        </div>
+        <div class="footer-socials">
+            <a href="https://linkedin.com/in/saurabhshivgan" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/iSSS007" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/shivgansaurabh" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/gta.vegus" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCARerohEQDIrjAuj32HAdVg" target="_blank" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+         SCRIPTS
+    ============================================================ -->
+    <script src="assets/js/script.js"></script>
+</body>
 
 </html>
