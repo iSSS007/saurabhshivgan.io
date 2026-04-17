@@ -1061,6 +1061,24 @@
       background: rgba(139,92,246,0.1);
     }
 
+    /* MOBILE FIX */
+    @media (max-width: 600px) {
+        footer {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer-copy {
+            order: 2;
+            font-size: 0.75rem;
+        }
+
+        .footer-socials {
+            order: 1;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
     /* ============================================================
        SCROLL REVEAL
     ============================================================ */
